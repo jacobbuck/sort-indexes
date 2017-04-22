@@ -9,7 +9,8 @@ module.exports = function sortIndexes(array, compare) {
 
   var length = array.length;
   var result = Array(length);
-  var i1 = i2 = -1;
+  var i1 = -1;
+  var i2 = -1;
 
   while (++i1 < length) {
     result[i1] = { i: i1, v: array[i1] };
