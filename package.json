@@ -1,6 +1,6 @@
 {
   "name": "sort-indexes",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Sorts the elements of an array and returns the indexes in sorted order.",
   "main": "index.js",
   "scripts": {
