@@ -1,0 +1,30 @@
+{
+  "name": "sort-indexes",
+  "version": "0.0.1",
+  "description": "Sorts the elements of an array and returns the indexes in sorted order.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jacobbuck/sort-indexes.git"
+  },
+  "keywords": [
+    "array",
+    "index",
+    "indexes",
+    "order",
+    "sort"
+  ],
+  "author": "Jacob Buck <buck.jacob@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jacobbuck/sort-indexes/issues"
+  },
+  "homepage": "https://github.com/jacobbuck/sort-indexes#readme",
+  "devDependencies": {
+    "expect": "^1.20.2",
+    "mocha": "^3.2.0"
+  }
+}
