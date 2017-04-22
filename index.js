@@ -8,7 +8,7 @@ module.exports = function sortIndexes(array, compare) {
   compare = compare || defaultCompare;
 
   var length = array.length;
-  var result = Array(length);
+  var result = new Array(length);
   var i1 = -1;
   var i2 = -1;
 
