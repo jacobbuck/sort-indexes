@@ -2,8 +2,14 @@
   "name": "sort-indexes",
   "version": "1.0.0",
   "description": "Sorts the elements of an array and returns the indexes in sorted order.",
-  "main": "index.js",
+  "main": "lib/index.cjs.js",
+  "module": "lib/index.esm.js",
+  "files": [
+    "lib"
+  ],
   "scripts": {
+    "build": "rollup -c",
+    "prepare": "npm run build",
     "test": "mocha"
   },
   "repository": {
@@ -24,7 +30,11 @@
   },
   "homepage": "https://github.com/jacobbuck/sort-indexes#readme",
   "devDependencies": {
+    "@babel/core": "^7.11.4",
+    "@babel/preset-env": "^7.11.0",
+    "@rollup/plugin-babel": "^5.2.0",
     "expect": "^1.20.2",
-    "mocha": "^3.2.0"
+    "mocha": "^3.2.0",
+    "rollup": "^2.26.4"
   }
 }

@@ -1,10 +1,8 @@
-'use strict';
-
 function defaultCompare(a, b) {
   return a < b ? -1 : a > b ? 1 : 0;
 }
 
-module.exports = function sortIndexes(array, compare) {
+function sortIndexes(array, compare) {
   compare = compare || defaultCompare;
 
   var length = array.length;
@@ -26,3 +24,5 @@ module.exports = function sortIndexes(array, compare) {
 
   return result;
 };
+
+export default sortIndexes;
