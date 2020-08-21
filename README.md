@@ -1,22 +1,21 @@
 # sort-indexes
 
-Sorts the elements of an array and returns the indexes in sorted order.
+Sorts the elements of an array and returns a new array with the indexes from the original array in sorted order.
 
 ## Usage
 
 ```js
-sortIndexes(array);
-sortIndexes(array, compareFunction);
+sortIndexes(arr[, comparitor])
 ```
 
 ### Parameters
 
-- `array` array to sort
-- `compareFunction` (optional) function that defines the sort order
+- `arr` array to sort.
+- `comparitor` (optional) function that defines the sort order.
 
 ### Return value
 
-A new array containing the indexes of `array` in the sorted order.
+A new array containing the indexes of `arr` in the sorted order.
 
 ## Examples
 
