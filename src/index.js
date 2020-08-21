@@ -1,28 +1,9 @@
-function defaultCompare(a, b) {
-  return a < b ? -1 : a > b ? 1 : 0;
-}
+const defaultComparitor = (a, b) => (a < b ? -1 : a > b ? 1 : 0);
 
-function sortIndexes(array, compare) {
-  compare = compare || defaultCompare;
-
-  var length = array.length;
-  var result = new Array(length);
-  var i1 = -1;
-  var i2 = -1;
-
-  while (++i1 < length) {
-    result[i1] = { i: i1, v: array[i1] };
-  }
-
-  result.sort(function (a, b) {
-    return compare.call(array, a.v, b.v);
-  });
-
-  while (++i2 < length) {
-    result[i2] = result[i2].i;
-  }
-
-  return result;
-}
+const sortIndexes = (array, comparitor = defaultComparitor) =>
+  array
+    .map((v, i) => ({ i, v }))
+    .sort((a, b) => comparitor(a.v, b.v))
+    .map(({ i }) => i);
 
 export default sortIndexes;
