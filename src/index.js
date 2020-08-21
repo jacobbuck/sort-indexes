@@ -14,7 +14,7 @@ function sortIndexes(array, compare) {
     result[i1] = { i: i1, v: array[i1] };
   }
 
-  result.sort(function(a, b) {
+  result.sort(function (a, b) {
     return compare.call(array, a.v, b.v);
   });
 
@@ -23,6 +23,6 @@ function sortIndexes(array, compare) {
   }
 
   return result;
-};
+}
 
 export default sortIndexes;
