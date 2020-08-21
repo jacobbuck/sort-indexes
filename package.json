@@ -34,10 +34,9 @@
     "@babel/core": "^7.11.4",
     "@babel/preset-env": "^7.11.0",
     "@rollup/plugin-babel": "^5.2.0",
-    "expect": "^1.20.2",
     "husky": "^4.2.5",
+    "jest": "^26.4.1",
     "lint-staged": "^10.2.11",
-    "mocha": "^3.2.0",
     "prettier": "^2.0.5",
     "rollup": "^2.26.4"
   }
