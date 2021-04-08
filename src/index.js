@@ -3,8 +3,8 @@ const defaultComparator = (a, b) =>
 
 const sortIndexes = (array, comparator = defaultComparator) =>
   array
-    .map((v, i) => ({ i, v }))
-    .sort((a, b) => comparator(a.v, b.v))
-    .map(({ i }) => i);
+    .map((value, index) => [index, value])
+    .sort(([,a], [,b]) => comparator(a, b))
+    .map(([index]) => index);
 
 export default sortIndexes;
