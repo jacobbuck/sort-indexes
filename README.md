@@ -5,17 +5,17 @@ Sorts the elements of an array and returns a new array with the indexes from the
 ## Usage
 
 ```js
-sortIndexes(arr[, comparator])
+sortIndexes(array[, comparator])
 ```
 
 ### Parameters
 
-- `arr` array to sort.
+- `array` the array to sort.
 - `comparator` (optional) function that defines the sort order.
 
 ### Return value
 
-A new array containing the indexes of `arr` in the sorted order.
+A new array containing the indexes of `array` in the sorted order.
 
 ## Examples
 
