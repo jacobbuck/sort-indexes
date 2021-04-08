@@ -1,5 +1,15 @@
 # Changelog
 
+## Unreleased
+
+### Added
+
+- Added support for iterator objects (such as `Map` and `Set`.)
+
+### Changed
+
+- The default `comparator` now behaves closer to `Array.prototype.sort()`.
+
 ## 2.0.0 - 2020-08-21
 
 ### Added
