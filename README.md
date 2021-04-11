@@ -1,6 +1,6 @@
 # sort-indexes
 
-Sorts the elements of an array and returns a new array with the indexes from the original array in sorted order.
+Sorts the elements of an array and returns a new array with the indexes of the elements from the original array in sorted order.
 
 ## Usage
 
@@ -12,6 +12,9 @@ sortIndexes(array[, comparator])
 
 - `array` the array to sort.
 - `comparator` (optional) function that defines the sort order.
+  If omitted, the array elements are converted to strings, then sorted according to each character's Unicode code point value.
+  - `firstEl` The first element for comparison.
+  - `secondEl` The second element for comparison.
 
 ### Return value
 
