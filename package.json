@@ -10,6 +10,7 @@
   "sideEffects": false,
   "scripts": {
     "build": "rollup -c",
+    "coverage": "jest --coverage",
     "format": "prettier --write .",
     "prepare": "npm run build",
     "test": "jest"
