@@ -4,11 +4,12 @@
 
 ### Added
 
-- Added support for iterator objects (such as `Map` and `Set`.)
+- Added support for array-like and iterator objects (such as `Map` and `Set`.)
 
 ### Changed
 
-- The default `comparator` now behaves closer to `Array.prototype.sort()`.
+- **BREAKING** Internet Explorer now requires a polyfill for [`Array.from()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from) method.
+- **BREAKING** The default `comparator` has changed to behave closer to `Array.prototype.sort()`.
 
 ## 2.0.0 - 2020-08-21
 
