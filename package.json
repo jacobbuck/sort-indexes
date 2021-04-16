@@ -1,6 +1,6 @@
 {
   "name": "sort-indexes",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "Sorts an array and returns the original indexes in sorted order.",
   "main": "lib/index.cjs.js",
   "module": "lib/index.esm.js",
