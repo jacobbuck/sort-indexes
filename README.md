@@ -25,7 +25,7 @@ A new array containing the indexes of `array` in the sorted order.
 ```js
 import sortIndexes from 'sort-indexes';
 
-sortIndexes(['c', 'a', 'b']); // -> [2, 0, 1]
+sortIndexes(['c', 'a', 'b']); // -> [1, 2, 0]
 
 sortIndexes([5, 1, 3, 4, 2], (a, b) => b - a); // -> [0, 3, 2, 4, 1]
 ```
