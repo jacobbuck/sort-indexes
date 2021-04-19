@@ -13,7 +13,9 @@
     "coverage": "jest --coverage",
     "format": "prettier --write .",
     "prepare": "npm run build",
-    "test": "jest"
+    "preversion": "npm run test",
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "repository": {
     "type": "git",
